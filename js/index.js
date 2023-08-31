@@ -1,6 +1,17 @@
 'use strict';
 
 function submit(){
-    let text = document.querySelector("#Adjective1").value;
-    document.querySelector("#line1").innerHTML = text;
+    //Adjective 1
+    let a = document.querySelector("#adjective1").value;
+    document.querySelector("#blank1").innerHTML = a;
+    //Noun 1
+    let b = document.querySelector("#noun1").value;
+    document.querySelector("#blank2").innerHTML = b;
+    //
+    
+    
+}
+
+function story(){
+    window.location.href="/story.html";
 }

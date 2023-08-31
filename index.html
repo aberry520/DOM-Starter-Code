@@ -11,15 +11,21 @@
 
 <body>
     <header>
-        <h1>Mad Libs</h1>
-        <input type="text" id="adjective1" placeholder="Adjective 1">
-        <input type="text" id="noun1" placeholder="Noun 1">
-        <input type="text" id="Adjective1" placeholder="Adjective 2">
-        
+        <div class="home">
+            <h1 class="title">Mad Libs</h1>
+            <div class="input">
+                <input type="text" id="adjective1" placeholder="Adjective 1">
+                <input type="text" id="noun1" placeholder="Noun 1">
+                <button onclick="submit()">Submit</button>
+            </div>
+
+            <!-- <button onclick="story()">Story</button> -->
+        </div>
     </header>
     <main>
-        <button onclick="submit()">Submit</button>
-        <p>It was a <u id="blank1"> Adjective 1</u> day in the <u id="blank1"> Noun 1</u>.</p>
+        <div id="box">
+            <p>It was a <u id="blank1"> Adjective 1</u> day in the <u id="blank2"> Noun 1</u>.</p>
+        </div>
     </main>
 </body>
 <script src="js/index.js"></script>
