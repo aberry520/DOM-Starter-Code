@@ -12,11 +12,12 @@
 <body>
     <header>
         <div class="home">
-            <h1 class="title">Mad Libs</h1>
+            <!-- <h1 class="title">Mad Libs</h1> -->
+            <div class="imgCont"><img class="madLibs" src="https://www.penguinrandomhouse.ca/sites/default/files/2020-04/MadLibs.png"></div>
             <div class="input">
-                <input type="text" id="adjective1" placeholder="Adjective 1">
-                <input type="text" id="noun1" placeholder="Noun 1">
-                <button onclick="submit()">Submit</button>
+                <input type="text" id="adjective1" placeholder="Adjective">
+                <input type="text" id="noun1" placeholder="Noun(place)">
+                <button onclick="submit();story()">Submit</button>
             </div>
 
             <!-- <button onclick="story()">Story</button> -->
@@ -24,7 +25,10 @@
     </header>
     <main>
         <div id="box">
-            <p>It was a <u id="blank1"> Adjective 1</u> day in the <u id="blank2"> Noun 1</u>.</p>
+            <p>
+                It was a <u id="blank1"> Adjective 1</u> 
+                day in the <u id="blank2"> Noun 1</u>.
+            </p>
         </div>
     </main>
 </body>
