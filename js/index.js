@@ -1,5 +1,5 @@
 'use strict';
-
+console.log(document.querySelector("#eight").value)
 function submit(){
     document.querySelector("#blank1").innerHTML = document.querySelector("#one").value;
     document.querySelector("#blank2").innerHTML = document.querySelector("#two").value;

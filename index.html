@@ -11,24 +11,32 @@
 
 <body>
     <header>
-        <div class="home">
+        <div class="home" id="home">
             <!-- <h1 class="title">Mad Libs</h1> -->
-            <div class="imgCont"><img class="madLibs" src="https://www.penguinrandomhouse.ca/sites/default/files/2020-04/MadLibs.png"></div>
+            <div class="imgCont"><img class="madLibs" src="/css/images/MadLibs.png"></div>
             <div class="input">
-                <input type="text" id="adjective1" placeholder="Adjective">
-                <input type="text" id="noun1" placeholder="Noun(place)">
-                <button onclick="submit();story()">Submit</button>
+                <input type="text" id="one" placeholder="Noun (place)">
+                <input type="text" id="two" placeholder="Verb -ed">
+                <input type="text" id="three" placeholder="Noun (object)">
+                <input type="text" id="four" placeholder="Number">
+                <input type="text" id="five" placeholder="Noun (plural)">
+                <input type="text" id="six" placeholder="Noun(plural)">
+                <input type="text" id="seven" placeholder="Verbing">
+                <input type="text" id="eight" placeholder="Noun(place)">
+                <button onclick="submit();story()">Get Story!</button>
             </div>
-
-            <!-- <button onclick="story()">Story</button> -->
         </div>
     </header>
     <main>
         <div id="box">
-            <p>
-                It was a <u id="blank1"> Adjective 1</u> 
-                day in the <u id="blank2"> Noun 1</u>.
-            </p>
+            
+                <p><a onclick="reset()">
+                    Last summer my family and I went to a  <u id="blank1"> Noun (place)</u> on vacation.
+                    We <u id="blank2">Verb -ed</u> in a <u id="blank3"> Noun (object)</u>, and it took <u id="blank4"> Number</u>
+                    days to get there. I took lots of photos of the <u id="blank5"> Noun (plural) </u> there, and saw wild 
+                    <u id="blank6"> Noun (plural)</u> <u id="blank7"> Verb -ing</u> in the <u id="blank8"> Noun (place)</u>. 
+                </a></p>
+            
         </div>
     </main>
 </body>
